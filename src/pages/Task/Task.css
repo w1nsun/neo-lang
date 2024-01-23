@@ -1,0 +1,226 @@
+.task-container-block {
+  text-align: left;
+}
+
+.task-container-block .answer-item {
+  min-width: 48px;
+  min-height: 35px;
+  width: fit-content;
+  position: relative;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.task-container-block .answer-item .answer-correct {
+  border-color: #15d676;
+  background-color: blueviolet;
+  width: auto;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  /* border-radius: 6px; */
+  border: solid 2px #e1e1ed;
+  box-sizing: border-box;
+  outline: none !important;
+  min-height: 32px;
+  font-size: 18px;
+  user-select: text;
+}
+
+.exercise-select-correct-form-word-text {
+  font-size: 18px !important;
+  line-height: 2.2 !important;
+  word-break: break-word !important;
+}
+
+.exercise-select-correct-form-word .exercise-select-correct-form-word-text {
+  font-size: 18px !important;
+  line-height: 2.2 !important;
+  color: #39394d !important;
+  word-break: break-word !important;
+}
+
+.exercise-select-correct-form-word-answer {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0 3px;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+.right_answer_tip_wrapper {
+  position: relative;
+}
+
+.right_answer_tip_wrapper .answer-item {
+  position: relative;
+  width: fit-content;
+  min-height: 35px;
+  min-width: 48px;
+}
+
+.select-item {
+  position: relative;
+}
+
+/*select-correct-form-word select_word_selected hoverBlock*/
+
+.select-correct-form-word {
+  position: relative;
+  cursor: pointer;
+  min-width: 58px;
+  width: auto;
+  min-height: 32px;
+  height: auto;
+  padding: 0 19px 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  border-radius: 6px;
+  border: solid 2px #e1e1ed;
+  background-color: #fff;
+  box-sizing: border-box;
+  outline: none !important;
+  line-height: 28.2px;
+  color: #39394d;
+}
+
+.select-correct-form-word .arrow {
+  width: 11px;
+  height: 7px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(/class/files/node_modules/exercise-select-correct-form-word/src/assets/icons/icon-arrow-select-correct-form-word.svg?9283bc2…);
+  background-repeat: no-repeat;
+}
+
+.select-correct-form-word .select_word_selected {
+  border-color: #32cafc !important;
+}
+
+.select-correct-form-word .arrow .open {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.select-correct-form-word .arrow .center {
+  right: 0px;
+}
+
+.select-item > .arrow {
+  transform: translateX(-50%);
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  bottom: -12px;
+  z-index: 20;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(219, 241, 208, 0);
+  border-bottom-color: #fff;
+  border-width: 7px;
+}
+
+.select-item .select-correct-form-word-dropdown {
+  padding: 8px 0;
+  box-shadow: 0 0 16px 0 rgba(184, 184, 202, 0.5);
+  background-color: #fff;
+  border-radius: 8px;
+  user-select: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  white-space: nowrap;
+  color: #39394d;
+  z-index: 19;
+  min-width: max-content;
+}
+
+.select-item .select-correct-form-word-dropdown .substrate {
+  width: 100%;
+  height: 11px;
+  position: absolute;
+  top: -11px;
+  left: 0;
+}
+
+.scroll {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+}
+
+.scroll .scroll-content {
+  max-height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  height: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.select-item .select-correct-form-word-dropdown .options {
+  max-height: 140px;
+}
+
+.select-item .select-correct-form-word-dropdown .options .item {
+  padding: 0 12px;
+  line-height: 38px;
+  word-break: break-word;
+  min-height: 40px;
+  white-space: normal;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.select-item .select-correct-form-word-dropdown .options .item:hover {
+  background-color: #f5f7fa;
+}
+
+.select-correct-form-word.select_word_selected {
+  border-color: #32cafc !important ;
+}
+
+.exercise-history-answers {
+  position: relative;
+  user-select: none;
+}
+
+.exercise-select-correct-form-word-answer .exercise-history-answers {
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.exercise-history-answers .indicators_wrapper {
+  position: relative;
+}
+
+.exercise-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exercise-history-answers .comment-icon {
+  margin-top: 4px;
+}
+
+.comment-icon {
+  display: block;
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+  background-image: url(/class/files/node_modules/exercise-history-answers/src/assets/icons/icon-not-have-comment.svg?5e67354…);
+}

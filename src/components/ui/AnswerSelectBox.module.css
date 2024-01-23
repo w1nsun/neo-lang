@@ -1,0 +1,67 @@
+.answer-select-box {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  position: relative;
+  gap: 0.5em;
+  padding: 0em 0.5em;
+  outline: none;
+  border-radius: 0.25em;
+  border: 0.05em solid #777;
+  min-height: 1.4em;
+}
+
+.answer-select-box:focus {
+  border-color: hsl(200, 100%, 50%);
+}
+
+.value {
+  flex-grow: 1;
+}
+
+.devider {
+  background-color: #777;
+  align-self: stretch;
+  width: 0.05em;
+}
+
+.caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: #777;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 0.05em solid #777;
+  border-radius: 0.25em;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: rgb(149, 113, 182);
+  z-index: 100;
+}
+
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.option.highlighted {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+}
+
+.option.selected {
+  background-color: hsl(200, 100%, 70%);
+}
